@@ -6,17 +6,17 @@ class MyDocument extends Document {
             <Html lang="en">
                 <Head>
                     <link rel="icon" href="/images/Jemaai-logo.png"/>
-                    <meta name="title" content="Jema.ai: An Open Source Jasper Alternative"/>
+                    <meta name="title" content="Jema.ai: Keyless Jasper Alternative"/>
                     <meta name="description" content="Jema.ai is an open-source alternative to Jasper, providing powerful AI-driven content generation for marketers,
             writers, and businesses. Discover the potential of AI-powered content creation with Jema.ai"/>
                     <meta property="og:site_name" content="Jema.ai"/>
 
-                    <meta property="og:title" content="Jema.ai: An Open Source Jasper Alternative"/>
+                    <meta property="og:title" content="Jema.ai: Keyless Jasper Alternative"/>
                     <meta name="twitter:card" content="summary_large_image"/>
                     <meta name="twitter:title" content="Generate any UI component in seconds."/>
                     <meta
                         name="twitter:description"
-                        content="Jema.ai is an open-source alternative to Jasper, providing powerful AI-driven content generation for marketers, writers, and businesses."
+                        content="Jema.ai is a keyless alternative to Jasper, providing powerful AI-driven content generation for marketers, writers, and businesses."
                     />
                     <meta
                         property="og:image"
