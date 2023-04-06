@@ -15,6 +15,7 @@ const createInstruction = (inputs: TemplateInput[], inputsData: InputsData): str
 };
 
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {
+    return res.status(418).json({ error: "I'm a teapot" })
 
     if (req.method === "POST") {
         const { template, inputsData } = req.body as { template: Template; inputsData: InputsData };

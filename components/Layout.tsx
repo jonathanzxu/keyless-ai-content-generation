@@ -13,17 +13,17 @@ export const SIDEBAR_ITEMS: any = [
     },
     {
         label: "Fork this repo",
-        url: "https://github.com/yuvalsuede/jasper-alternative-gpt",
+        url: "https://github.com/jonathanzxu/keyless-ai-content-generation",
         target: "blank"
     },
     {
         label: "Follow me on LinkedIn",
-        url: "https://www.linkedin.com/in/yuval-suede/",
+        url: "https://www.linkedin.com/in/jonathanzxu/",
         target: "blank"
     },
     {
         label: "Contact",
-        url: "https://www.linkedin.com/in/yuval-suede/",
+        url: "https://www.linkedin.com/in/jonathanzxu/",
         target: "blank"
     },
 ];

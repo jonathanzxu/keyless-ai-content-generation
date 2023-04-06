@@ -5,6 +5,7 @@ import {Template} from "../constants/templates";
 interface InputComponentProps {
     generateOutput: (template: Template, inputsData: { [key: string]: string }) => void;
     template: Template;
+    installed: boolean;
 }
 
 
@@ -46,6 +47,7 @@ const renderInputField = (
 const InputComponent: React.FC<InputComponentProps> = ({
                                                           template,
                                                           generateOutput,
+                                                          installed
                                                       }) => {
     const [isLoading, setIsLoading] = useState(false);
     const [inputsData, setInputsData] = useState<{ [key: string]: string }>({});
@@ -92,7 +94,7 @@ const InputComponent: React.FC<InputComponentProps> = ({
                         setIsLoading(false);
                     }}
                     className={`px-4 py-2 text-white bg-gradient-to-r from-purple-400 to-blue-400 rounded-md hover:from-purple-300 hover:to-blue-300 relative ${isLoading ? 'opacity-50' : ''}`}
-                    disabled={isLoading || isFirstInputEmpty()}
+                    disabled={isLoading || isFirstInputEmpty() || !installed}
                 >
                     {isLoading && (
                         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">

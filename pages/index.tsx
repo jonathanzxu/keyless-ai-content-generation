@@ -8,7 +8,7 @@ const HomePage: React.FC = () => {
     return (
         <Layout title="">
             <h1 className="text-4xl font-bold mt-10 ml-10">
-                Welcome to <span className="text-blue-600">Jema.ai</span>
+                Welcome to Keyless <span className="text-blue-600">Jema.ai</span> - Powered by Window.AI!
                 <div>
                     <a href="https://www.producthunt.com/posts/jema-ai?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-jema&#0045;ai"
                        target="_blank"><img

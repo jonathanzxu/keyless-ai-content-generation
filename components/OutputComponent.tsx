@@ -4,9 +4,10 @@ import Toast from "./Toast";
 interface OutputComponentProps {
     generatedOutput: string;
     onClearOutput: () => void;
+    model: string;
 }
 
-const OutputComponent: React.FC<OutputComponentProps> = ({generatedOutput, onClearOutput}) => {
+const OutputComponent: React.FC<OutputComponentProps> = ({generatedOutput, onClearOutput, model}) => {
     const [toastVisible, setToastVisible] = useState(false);
 
     const copyTextToClipboard = async (answer: string) => {
@@ -43,15 +44,16 @@ const OutputComponent: React.FC<OutputComponentProps> = ({generatedOutput, onCle
                 <nav className="flex flex-grow py-1 space-x-3" aria-label="Tabs">
                     <button
                         className="relative transition-all duration-150 before:transition-all before:duration-150 before:absolute before:inset-0 whitespace-nowrap py-2 px-3 text-xs font-medium before:bg-gray-100 before:rounded-lg before:scale-100 before:opacity-100 text-blue-700">
-            <span className="relative">
-              New outputs{" "}
-                <span className="px-2 py-1 ml-2 text-xs rounded-full bg-white">
-                {outputs.length}
-              </span>
-            </span>
+                        <span className="relative">
+                        New outputs{" "}
+                            <span className="px-2 py-1 ml-2 text-xs rounded-full bg-white">
+                            {outputs.length}
+                        </span>
+                        </span>
                     </button>
                     {/* ... other buttons, if needed */}
                 </nav>
+                <span className="mx-auto my-auto">Using Model: {model}</span>
                 <div>
                     <button
                         onClick={onClearOutput}

@@ -48,7 +48,7 @@ const Sidebar: React.FC<Props> = ({items, onShowPopup}) => {
                      onClick={handleClick}>
                     <div className="flex flex-col">
                         <Image src={"/images/Jemaai-logo.png"} alt="Jema.ai" width="250" height="100"/>
-                        <h1 className="text-lg font-normal text-gray-700 text-center">Open Source </h1>
+                        <h1 className="text-lg font-normal text-gray-700 text-center">Keyless </h1>
                         <h1 className="text-lg font-semibold text-gray-700  text-center">Jasper <i
                             className="fas fa-arrow-right text-primary"/> alternative</h1>
 
@@ -62,7 +62,7 @@ const Sidebar: React.FC<Props> = ({items, onShowPopup}) => {
                             <div className="flex flex-row align-middle justify-center">
                                 <a
                                     className="flex max-w-fit items-center justify-center space-x-2 rounded-full border border-gray-300 bg-white px-4 py-2 text-sm text-gray-600 shadow-md transition-colors hover:bg-gray-100 mt-5 animate-wobble"
-                                    href="https://github.com/yuvalsuede/jasper-alternative-gpt"
+                                    href="https://github.com/jonathanzxu/keyless-ai-content-generation"
                                     target="_blank"
                                     rel="noopener noreferrer"
                                 >
@@ -86,7 +86,7 @@ const Sidebar: React.FC<Props> = ({items, onShowPopup}) => {
                             </Fragment>
                         ))}
 
-                        <li>
+                        {/* <li>
                             <div className="w-full flex align-middle justify-center mt-5">
                                 <button
                                     className="w-2/3 bg-gradient-to-r from-green-400 to-blue-500 text-white px-6 py-2 rounded-full font-semibold text-xs shadow-md"
@@ -95,7 +95,7 @@ const Sidebar: React.FC<Props> = ({items, onShowPopup}) => {
                                     Go Pro
                                 </button>
                             </div>
-                        </li>
+                        </li> */}
 
                     </ul>
 
