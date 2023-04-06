@@ -20,11 +20,11 @@ class MyDocument extends Document {
                     />
                     <meta
                         property="og:image"
-                        content="https://www.jema.ai/Jemma.ai.png"
+                        content="https://www.jema.ai/images/Jemaai-logo.png"
                     />
                     <meta
                         name="twitter:image"
-                        content="https://www.jema.ai/Jemma.ai.png"
+                        content="https://www.jema.ai/images/Jemaai-logo.png"
                     />
                 </Head>
                 <body>
